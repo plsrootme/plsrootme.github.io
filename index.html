@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlsRootMe</title>
+  <style>
+    * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #eaf6ff, #ffffff);
+      color: #0a3d62;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .phone {
+      width: 360px;
+      height: 720px;
+      border-radius: 36px;
+      background: linear-gradient(180deg, #ffffff, #f2f9ff);
+      box-shadow: 0 20px 60px rgba(0, 140, 255, 0.25);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border: 1px solid #d6ecff;
+    }
+    .header {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #1e90ff;
+    }
+    .buttons {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    a.button {
+      text-decoration: none;
+      background: linear-gradient(180deg, #ffffff, #e6f3ff);
+      color: #1e90ff;
+      border: 1px solid #cce6ff;
+      border-radius: 18px;
+      padding: 18px 6px;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(30, 144, 255, 0.2);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    a.button:active {
+      transform: scale(0.96);
+      box-shadow: 0 4px 12px rgba(30, 144, 255, 0.35);
+    }
+  /* Responsive for phones */
+    @media (max-width: 480px) {
+      .phone {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+      }
+      .buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Smartwatch / very small screens */
+    @media (max-width: 300px) {
+      body {
+        align-items: flex-start;
+      }
+      .phone {
+        width: 100vw;
+        height: 100vw;
+        border-radius: 50%;
+        padding: 12px;
+      }
+      .header {
+        font-size: 18px;
+      }
+      .buttons {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      a.button {
+        font-size: 12px;
+        padding: 12px 6px;
+        border-radius: 999px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="header">plsrootme</div>
+    <div class="buttons">
+      <a class="button" href="https://overfiledown.github.io/?https://plsrootme.github.io/apps/kingoroot.apk" target="_blank">Android Lollipop (5) </a>
+    </div>
+  </div>
+</body>
+</html>
